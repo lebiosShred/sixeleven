@@ -42,7 +42,7 @@ function visitMDR() {
 }
 
 function GoToProject() {
-    window.location.href = "/Projects/Project-section.html";
+    window.location.href = "./Projects/Project-section.html";
 }
 
 function PlayTB() {
