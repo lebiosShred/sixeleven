@@ -1,0 +1,212 @@
+/*----------- This is for Callbox-section and Medprobe--*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+:root {
+    --main-bg-color: #fdf4f4;
+    --hdr-nav-color: #534e50b0;
+    --main-font-Source:'Source Code Pro', monospace;
+
+    --main-font-advent:'Advent Pro', sans-serif;
+
+    --box-shadow-1: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    --box-shadow-2: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font-Source);
+    
+   
+   
+}
+
+
+
+
+.callbox-logo {
+    display: flex;
+    float: right;
+    margin: 15vh 5vw 0 0;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.callbox-logo > img {
+    max-width: 100%;
+    height: 50vh;
+    
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-1);
+}
+
+.cb-overview {
+    height: fit-content;
+    width: 55em;
+    position: relative;
+
+    text-justify:inter-word;
+    line-height: 25px;
+    top: 15vh;
+  
+    margin: 0 0 0 15px;
+}
+
+.cb-overview > h2 {
+    margin: 20px 0 0 0;
+}
+
+.cb-overview > button {
+    height: 50px;
+    width: 170px;
+    position: absolute;
+    top: 55vh;
+    
+    color: white;
+    background-color: rgb(240, 161, 14);
+
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.returnarrow {
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+
+    top: 5vh;
+    left: 10vh;
+
+}
+
+.returnarrow > p {
+    position: relative;
+    margin: 8px 0 0 15px;
+}
+
+.medline {
+    display: flex;
+    width: fit-content;
+    height: 100%;
+   
+}
+
+.medline-container {
+    width: fit-content;
+    height: 100%;
+    position: relative;
+
+    top: 15vh;
+    margin: 0 0 0 5vw;
+    
+    
+}
+
+.medline-container > img {
+    max-width: 25vw;
+    position: relative;
+    left: -5vw;
+
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-1);
+    
+  
+}
+
+.medline-overview {
+
+    margin: 0 1em 0 1em;
+
+}
+
+.medline-overview > p {
+   width: fit-content;
+   position: relative;
+   top: 17vh;
+
+   Color: white;
+}
+
+.medline-overview > h2 {
+    position: absolute;
+    top: 50vh;
+
+    color: white;
+
+}
+
+.medline-overview > button {
+    height: 50px;
+    width: 170px;
+    position: absolute;
+    
+    left: 31vw;
+    top: 60vh;
+
+    color: white;
+    background-color: rgba(87, 18, 214, 0.877);
+
+    font-size: 1.2em;
+    border-radius: 20px;
+}
+
+.returnarrow-md {
+    color:white;
+    
+}
+
+.vxi-section {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+
+.vxi-logo {
+    margin: 15vh 0 0 50px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.vxi-logo > img {
+    max-width: 25vw;
+    box-shadow: var(--box-shadow-1);
+    border-radius: 10px;
+}
+
+.vxi-overview {
+    margin: 16vh 25px 0 5vw;
+    text-align: justify;
+}
+
+.vxi-overview > h2 {
+    margin: 30px 0 0 0;
+}
+
+.returnarrow-vxi {
+    position: absolute;
+    top: 30px; 
+    left: 50px;
+}
+
+.vxi-overview > button {
+    height: 50px;
+    width: 170px;
+    position: absolute;
+    
+    left: 34vw;
+    top: 57vh;
+
+    color: white;
+    background-color: rgba(235, 157, 12, 0.877);
+
+    font-size: 1.2em;
+    border-radius: 20px;
+}
+

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+:root {
+    --main-bg-color: #fdf4f4;
+    --hdr-nav-color: #534e50b0;
+    --main-font-Source:'Source Code Pro', monospace;
+
+    --main-font-advent:'Advent Pro', sans-serif;
+
+    --box-shadow-1: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    --box-shadow-2: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font-Source);
+  
+   
+}
+
+body {
+    height: 125vh;
+    letter-spacing: 2px;
+    background: linear-gradient(to left, #4a8067, #e2e2e7);
+}
+
+
+header {
+    height: fit-content;
+    width: 100%;
+    top: -0.5vh;
+    
+    position: fixed;
+    z-index: 2;
+  
+}
+
+footer > p {
+    display: flex; 
+    justify-content: center;
+    margin: 5vh 0 0 0;
+}
+
+.header-navbar {
+    display: flex; 
+    justify-content: end;
+    position: relative;
+
+    background-color: var(--hdr-nav-color);
+    
+}
+
+
+.header-navbar > li {
+    padding: 10px;
+    margin: 0 40px 0 0;   
+    text-decoration: none;
+    list-style: none;
+
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: white;
+    position: relative;
+    right: 190px;
+    justify-self: end;
+
+}
+
+
+
+.header-navbar:hover {
+    cursor: grab;
+}
+
+
+.overview-content {
+    position: relative;
+    margin: 15vh 25px 0 25px;
+    top: 10vh;
+    width:fit-content;
+}
+
+
+.overview-content > h1 {
+    margin: 0 0 25px 0;
+    font-size: 2.5em;
+    
+}
+
+.overview-content > h2 {
+    margin: 5vh 0 0 0;
+
+}
+.overview-content > p {
+    font-size: 1em;
+    
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 30px;
+
+    width: fit-content;
+}
+
+.overview-img > img {
+    max-width: 100%;    
+    float: right;
+    
+    position: absolute;
+    top: 10vh;
+    left: 64vw;
+    z-index: 1;
+
+}
+
+.experience {
+    position: relative;
+    height: 50vh;
+    background-color: #c0d314d2;
+    margin: 14vh 0 0 0;
+    display: flex;
+
+}
+
+.experience > h2 {
+    position: absolute;
+    right: -1vw;
+    font-size: 2.5em;
+    font-family: var(--main-font-advent);
+    letter-spacing: 5px;
+    align-self: center;
+    color: white;
+
+    box-shadow: var(--box-shadow-1);
+    padding: 10px 100px 10px 10px;
+    background-color: #180606;
+}
+
+.nav-exp {
+    display: flex;
+    width: 50em;
+    height: fit-content;
+
+    align-items: center;
+    text-align: center;
+  
+}
+
+
+.nav-exp > li {
+    list-style: none;
+    box-shadow: var(--box-shadow-1);
+   
+    height: fit-content;
+    margin: 9vh 0 0 1vw;
+
+    border-radius: 5px;
+
+}
+
+#duxstyle-logo {
+    position: absolute;
+    animation:infinite linear;
+    animation-name: move;
+    animation-duration: 5s;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+
+.nav-exp > li:hover {
+    transform: scale(1.2);
+}
+
+#duxstyle-logo {
+    padding: 40px 0 0 0;
+}
+
+.nav-exp-img {
+    max-width: 13vw;
+   
+  
+}
+
+.duxstyle-header {
+    position: relative;
+    left: 35vw;
+    margin: 30px 30px 0 30px;
+    box-shadow: var(--box-shadow-2);
+    width: fit-content;
+}
+
+.duxstyle-main {
+    margin: 35px 0 0 20px;
+    position: relative;
+    display: block;
+    
+}
+
+
+.duxstyle-main > img {
+    position: absolute;
+}
+
+.duxstyle-main > h1 {
+    margin: 10px 0 25px 13em;
+    position: relative;
+    
+}
+
+.duxstyle-main > p {
+    position: relative;
+    margin: 0 0 0 26em;
+}
+
+.duxstyle-main > h2 {
+    position: absolute; 
+    left: 31.5vw;
+    top: 50vh;
+}
+
+
+.duxstyle-main > button {
+    height: 50px;
+    width: 170px;
+    position: absolute;
+    
+    left: 31.5vw;
+    top: 68vh;
+    
+    background-color: rgb(255, 255, 255);
+
+    font-size: 1.2em;
+}
+
+.returnarrow {
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+
+    top: 8vh;
+    left: 5vh;
+
+}
+
+.returnarrow > p {
+    position: relative;
+    margin: 8px 0 0 15px;
+}

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+
+:root {
+    --main-bg-color: #fdf4f4;
+    --hdr-nav-color: #534e50b0;
+    --main-font-Source:'Source Code Pro', monospace;
+    --font-space: 'Space Mono', monospace;
+    --main-font-advent:'Advent Pro', sans-serif;
+    --main-font-kaushan: 'Kaushan Script', cursive;
+    --font-orbitron: 'Kaushan Script', cursive;
+
+    --box-shadow-1: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    --box-shadow-2: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    --box-shadow-3: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background: #080808;
+    height: 200vh;
+    
+}
+
+#projects-txt {
+    color: rgb(255, 255, 255);
+    font-family: var(--font-space);
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin: 5vh 0 0 0;
+    letter-spacing: 15px;
+   
+}
+
+header {
+    margin: 15vh 5vw 0 5vw;
+}
+
+header > h1 {
+    padding: 30px 0 20px 0;
+    letter-spacing: 4px;
+}
+
+header > p {
+    letter-spacing: 2px;
+    font-size: 1.1em;
+    width: fit-content;
+
+    margin: 0 30em 0 0;
+    text-align: justify;
+}
+
+.gif-1 {
+    position: relative;
+    float: right;
+    bottom: 220px;
+    right: 100px;
+  
+}
+
+.gif-1 > img {
+    max-width: 25vw;
+    width: fit-content;
+    border-radius: 20px;
+    box-shadow:  rgba(252, 247, 247, 0.16) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
+ 
+}
+
+.game-section-1 {
+    display: flex;
+  
+    width: 95%;
+    position: relative;
+    bottom: 20vh;
+}
+
+.game-section-1 > h1{
+    width: 14em;
+}
+
+.game-section-1 > img {
+    max-width: 25vw;
+    height: 300px;
+    margin: 10vh 0 0 0;
+    border-radius: 10px;
+    position: relative;
+    left: -20vw;
+    width: fit-content;
+
+    
+}
+
+.game-section-1 > p {
+    color: rgb(255, 255, 255);
+    font-family: var(--font-space);
+    font-size: 2em;
+    justify-content: center;
+    letter-spacing: 5px;
+    height: fit-content;
+
+    position: relative;
+    top: 10vh;
+    right: 10vw;
+}
+
+.game-section-1 > button {
+    position: absolute;
+
+    left: 27vw;
+    top: 30vh;
+    color: black;
+    background-color: rgb(247, 87, 12);
+    padding: 20px;
+    border-radius: 20px;
+
+    margin: 0 0 0 3vw;
+}
+
+
+.game-section-2 {
+    display: flex;
+}
+
+.game-section-2 > img {
+    max-width: 25vw;
+    height: 300px;
+    margin: 15vh 0 0 0;
+    border-radius: 10px;
+    position: absolute;
+    width: fit-content;
+
+}
+
+.game-section-2 > p {
+    color: rgb(255, 255, 255);
+    font-family: var(--font-space);
+    font-size: 2em;
+    letter-spacing: 5px;
+    height: fit-content;
+
+    position: absolute;
+    left: 35vw;
+    bottom: -75vh;
+ 
+}
+
+.game-section-2 > button {
+    position: relative;
+
+    left: 17vw;
+    top: 30vh;
+    color: black;
+    background-color: rgb(11, 151, 233);
+    padding: 20px;
+    border-radius: 20px;
+
+    margin: 0 0 0 3vw;
+}
+
+/*------------------- RETURN ARROW--------------*/
+
+.returnarrow {
+    background: #fff;
+    width: fit-content;
+    height: 80px;
+    display: flex;
+    padding: 1px 15px 1px 5px;
+    border-radius: 15px;
+    position: absolute;
+    top: 1vh;
+    margin: 5vh 0 0 5vw;
+
+    box-shadow: var(--box-shadow-2);
+}
+
+.returnarrow > p {
+    color: black;
+    margin: 4vh 0 0 2vw;
+    letter-spacing: 5px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <title>Cj's E-portfolio for sixeleven</title>
+</head>
+<body>
+
+    <!-----------------
+    Header section includes the ff:
+    Header navigation bar-->
+        <header>
+                <ul class="header-navbar" div="navbar">
+                      <li onclick="GoToProject()">Projects</li>
+                      
+                      
+                </ul>
+        </header>  
+
+
+        <section class="overview-content">
+             <h1>Overview</h1>
+
+             <p>I am an experienced professional with a diverse skill set</p> 
+             <p>that includes B2B, technical support, outbound sales,</p>
+             <p> SEO and web development. My track record of success</p>
+             <p> in these areas has equipped me with the ability</p>
+             <p> to deliver results and make a positive impact on any</p>
+             <p>organization.</p>
+            <h2>Expertise: HTML, CSS, Js, SASS, Python, SQL, Kali</h2>
+        </section>
+ 
+
+    <div class="overview-img">
+        <img src="./images/my-image-1.png" alt="cj-image" style="width:24vw;">
+    </div>
+
+    <section class="experience">
+        <h2>Experience</h2>
+            <nav>
+                <ul class="nav-exp">
+                    <li onclick='GoToPage()'>
+                    <img src="./images/Duxstyle-logo.webp" alt="company-img" class="nav-exp-img"><p>Nov 2022</p></li>
+                    <li onclick="GoToCallbox()">
+                    <img src="./images/Callbox-IAO.jpg" alt="company-img" class="nav-exp-img">
+                    <p>Jul 2021 - Sept 2022 </p></li>
+                    <li onclick="GoToMedline()">
+                    <img src="./images/medline-logo.jpg" alt="company-img" class="nav-exp-img"><p>Dec 2019 - Jun 2021</p></li>
+                    <li onclick="GoToVXI()">
+                    <img src="./images/vxi-logo.jpg" alt="company-img" class="nav-exp-img"><p>Apr 2018 - Dec 2019</p></li>
+                    <li onclick="GoToMDR()">
+                    <img src="./images/madrabbit-logo.jpg" alt="company-img" class="nav-exp-img"><p>Nov 2017 - Apr 2018</p></li>
+                        
+                </ul>
+                
+            </nav>
+
+    </section>
+
+    <div id="dialog" title="NOTE!">
+        <p style="font-family: 'Courier New', Courier, monospace;">This website is intended for sixeleven only. It's currently on it's revamp stage and may be incomplete and sloppy. Please use a pc it's not responsive.</p>
+      </div>
+
+    <footer>
+        <p>This Portfolio is intended for sixeleven</p>
+
+        
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#dialog" ).dialog();
+    } );
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
