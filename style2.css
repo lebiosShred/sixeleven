@@ -65,8 +65,8 @@
 .cb-overview > button {
     height: 50px;
     width: 170px;
-    position: absolute;
-    top: 55vh;
+    position: relative;
+    margin: 5vh 0 0 0;
     
     color: white;
     background-color: rgb(240, 161, 14);

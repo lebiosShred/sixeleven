@@ -16,9 +16,15 @@
     Header navigation bar-->
         <header>
                 <ul class="header-navbar" div="navbar">
-                      <li onclick="GoToProject()">Projects</li>
-                      
-                      
+                     <img src="./images/LEBIOS_Logo.png" alt="my logo" id="mylogo">
+                     <div class="container-nxtpg">
+                        <ul class="nxtpg-content">
+                            <li class="nxtpg-item"><button type="button" id="nxtpg-proj" onclick="GoToProject()">Projects</button></li>
+                            <li class="nxtpg-item" onclick="GoToCert()"><button type="button">Certifications</button></li>
+                            <li class="nxtpg-item"><button type="button" onclick="OpenCv()">Resume</button></li>
+                            
+                        </ul>
+                    </div>
                 </ul>
         </header>  
 
@@ -32,53 +38,66 @@
              <p> in these areas has equipped me with the ability</p>
              <p> to deliver results and make a positive impact on any</p>
              <p>organization.</p>
-            <h2>Expertise: HTML, CSS, Js, SASS, Python, SQL, Kali</h2>
-        </section>
- 
+            <section class="expertise-section">
+                <p>Expertise:</p>
+                <div class="expertise-li-item-section"> 
+                <li><img src="./images/html5-logo.webp" alt="html logo" id="expertise-li-item"></li>
+                <li><img src="./images/css-3.png" alt="css logo" id="expertise-li-item"></li>
+                <li><img src="./images/js.png" alt="js logo" id="expertise-li-item"></li>
+                <li><img src="./images/flutter-logo.jpg" alt="flutter logo" id="expertise-li-item"></li>
+                <li><img src="./images/figma-logo.jpg" alt="figma logo" id="expertise-li-item"></li>
+                <li><img src="./images/kali-logo.jpg" alt="kali logo" id="expertise-li-item"></li>
+                <li><img src="./images/customer _support_img.jpg" alt="customer support" id="expertise-li-item" style="min-height:10vh;min-width:5vw;"></li>
+               </div>
 
-    <div class="overview-img">
-        <img src="./images/my-image-1.png" alt="cj-image" style="width:24vw;">
-    </div>
+            </section>
+
+
+        </section>
+
+       
+ 
 
     <section class="experience">
         <h2>Experience</h2>
-            <nav>
-                <ul class="nav-exp">
-                    <li onclick='GoToPage()'>
-                    <img src="./images/Duxstyle-logo.webp" alt="company-img" class="nav-exp-img"><p>Nov 2022</p></li>
-                    <li onclick="GoToCallbox()">
-                    <img src="./images/Callbox-IAO.jpg" alt="company-img" class="nav-exp-img">
-                    <p>Jul 2021 - Sept 2022 </p></li>
-                    <li onclick="GoToMedline()">
-                    <img src="./images/medline-logo.jpg" alt="company-img" class="nav-exp-img"><p>Dec 2019 - Jun 2021</p></li>
-                    <li onclick="GoToVXI()">
-                    <img src="./images/vxi-logo.jpg" alt="company-img" class="nav-exp-img"><p>Apr 2018 - Dec 2019</p></li>
-                    <li onclick="GoToMDR()">
-                    <img src="./images/madrabbit-logo.jpg" alt="company-img" class="nav-exp-img"><p>Nov 2017 - Apr 2018</p></li>
+        <nav>
+            <ul class="nav-exp">
+                <li class="exp-li-itm" onclick='GoToPage()'>
+                 <img src="./images/Duxstyle-logo.webp" alt="company-img" class="nav-exp-img" ><span id="wrk-time">Nov 2022 - May 2023</span></li>
+                <li class="exp-li-itm" onclick="GoToCallbox()" >
+                 <img src="./images/Callbox-IAO.jpg" alt="company-img" class="nav-exp-img">
+                <span id="wrk-time">Jul 2021 - Sept 2022 </span></li>
+                <li class="exp-li-itm" onclick="GoToMedline()" >
+                 <img src="./images/medline-logo.jpg" alt="company-img" class="nav-exp-img"><span id="wrk-time">Dec 2019 - Jun 2021</span></li>
+                <li class="exp-li-itm" onclick="GoToVXI()">
+                 <img src="./images/vxi-logo.jpg" alt="company-img" class="nav-exp-img"><span id="wrk-time">Apr 2018 - Dec 2019</span></li>
+                <li class="exp-li-itm" onclick="GoToMDR()">
+                 <img src="./images/madrabbit-logo.jpg" alt="company-img" class="nav-exp-img"><span id="wrk-time">Nov 2017 - Apr 2018</span></li>
                         
                 </ul>
                 
             </nav>
 
     </section>
-
-    <div id="dialog" title="NOTE!">
-        <p style="font-family: 'Courier New', Courier, monospace;">This website is intended for sixeleven only. It's currently on it's revamp stage and may be incomplete and sloppy. Please use a pc it's not responsive.</p>
-      </div>
-
+    
     <footer>
-        <p>This Portfolio is intended for sixeleven</p>
+        <section class="contacts">
+            <p id="footer-contacts">Contacts</p>
+        <nav class="contact-li">
+            <img src="./images/linkedin_logo.png" alt="linkedin logo" onclick="GoToLinkedIn()">
+            <img src="./images/github-logo.png" alt="linkedin logo" onclick="GoToGithub()">
+            <img src="./images/gmail_logo.png" alt="linkedin logo" onclick="sendEmail()">
+        </nav>
+            
+        </section>
 
+        </section>
         
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script>
-    $( function() {
-      $( "#dialog" ).dialog();
-    } );
-    </script>
+    
+                                       
     <script src="./script.js"></script>
+   
 </body>
 </html>
